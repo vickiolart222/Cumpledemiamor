@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PARA EL AMOR DE MI VIDA VICTORIA</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="envelope-wrapper">
+            <div class="envelope">
+                <div class="fixed-message">Para mi amor... Victoria O.</div>
+                <div class="letter">
+                    <div class="text">
+                        <strong>PARA LA PERSONA QUE MÁS AMO...</strong>
+                        <p>
+                            En este dia tan especial quiero expresarte todo el amor, agradecimiento,
+                            y admiracion que tengo y siempre he tenido por ti, por la mujer que eres 
+                            y por la mujer en la que te has convertido, veo cada dia como te esfurzas
+                            y siempre das lo mejor de ti para ser la mejor persona que eres y que he 
+                            conocido en mi vida, te has convertido en la mejor mujer, hija, hermana,
+                            novia, amiga, y lo mejor en todo lo que haces vida mia, en este dia quiero
+                            que sepas lo mucho que te amo y lo tan agradecido que estoy con la vida y 
+                            con Dios de haberte puesto en mi camino, por permitir conocernos, permitir 
+                            que todo se nos diera y que me enseñaras el verdadero significado de el amor
+                            del respeto, de la fidelidad y de todo lo que en ti reflejas, quisiera haber
+                            podido escribirte esta carta con mi puño y letra y hubiera anhelado estar en 
+                            este dia tan especial tanto para ti como para mi contigo, pero desde la distancia 
+                            quiero que siempre seas muy feliz que tu felicidad siempre sea primero y que 
+                            yo sepa que siempre estas siendo feliz en lo que estas, gracias por convertirte
+                            en la persona mas especial de mi vida mi amor y mas importante y por llegar a mi 
+                            vida en el momento que mas te necesitaba y en el que menos me espere que apareciera
+                            una persona tan bella y tan especial como lo eres tu mi amor y como la que Dios me
+                            regalo que eres tu mi vida... TE AMO POR SIEMPRE MI AMOR Y SIEMPRE TE AMARE ERES EL
+                            MEJOR REGALO DE LA VIDA Y DE TODO, TE AMO GRANDEMENTE REINA MIA.... 
+
+                            <br>
+                             
+                            -------------ATT: TU AMADO R.M.------------
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="heart"></div>
+        </div>
+    </div>
+    <script>
+        const envelopeWrapper = document.querySelector('.envelope-wrapper');
+        const letter = document.querySelector('.letter');
+        const heart = document.querySelector('.heart');
+        let isOpen = false;
+
+        heart.addEventListener('click', () => {
+            isOpen = !isOpen;
+            envelopeWrapper.classList.toggle('flap', isOpen);
+            letter.classList.toggle('visible', isOpen);
+        });
+    </script>
+</body>
+</html>
